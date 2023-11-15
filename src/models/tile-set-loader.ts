@@ -7,6 +7,8 @@ export interface ITileSetLoader {
     getTile(tileId: string): ITile;
 
     getTileRules(): RuledTile[];
+
+    getTileRule(tileId: string): RuledTile;
 }
 
 export class TileSetLoader implements ITileSetLoader {
@@ -18,6 +20,10 @@ export class TileSetLoader implements ITileSetLoader {
     }
 
     getTileRules(): RuledTile[] {
+        throw new Error("Method not implemented.");
+    }
+
+    getTileRule(tileId: string): RuledTile {
         throw new Error("Method not implemented.");
     }
 }

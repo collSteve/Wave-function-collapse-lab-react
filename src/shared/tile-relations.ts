@@ -19,7 +19,11 @@ export enum RelativeDirection {
     Right
 }
 
-export interface Position2D {
-    x: number;
-    y: number;
+export interface GridPosition {
+    row: number;
+    col: number;
+}
+
+export function oppositeGlobalDirOf(dir: WorldDirection): WorldDirection {
+    return (dir + 180) % 360 as WorldDirection;
 }
