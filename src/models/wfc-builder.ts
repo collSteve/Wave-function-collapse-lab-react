@@ -213,6 +213,7 @@ export class WFCBuilderByConnector implements IWFCBuilder, DisplayableWFC {
 
     } // end while
 
+    return connectorEntropyDiagram;
     }
 
     setTile(tile: TileInWFCInfo): void {
